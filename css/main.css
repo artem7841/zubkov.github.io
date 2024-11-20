@@ -1,0 +1,296 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.header {
+	background: linear-gradient(0deg, red, blue, white, #7BBBFF, #5DA9F7, #4594ED);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-position: 50% 10%;
+	background-size: 400% 400%;
+	animation: rus_animation 4s ease;
+	transform: translate3d(0, 0, 0);
+}
+
+
+@keyframes rus_animation {
+
+	0% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 10%;
+	}
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.wrapper-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white
+}
+
+.offer {
+	width: 700px;
+}
+
+.offer__title {
+	font-size: 30px;
+	font-weight: 800;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+.offer__span {
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.offer__text {
+	font-size: 16px;
+	width: 80%;
+}
+
+.btn2 {
+	display: block;
+	width: 220px;
+	height: 55px;
+	background-color: rgb(224, 194, 27);
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	
+}
+
+
+
+.img {
+	width: 500px;
+}
+
+
+.wrapper-main {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	align-items: center;
+
+}
+
+main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.blocks {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.col-md-4 {
+	justify-content: center;
+	align-items: center;
+}
+
+/* .blocks__block {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	justify-content: center;
+	align-items: center;
+} */
+
+.block__text {
+	text-align: center;
+}
+
+.head_h2 {
+	text-align: center;
+}
+
+.logo {
+	margin-bottom: 30px;
+}
+
+.small_heads {
+	margin-top: 50px;
+}
+
+.block__icon {
+	animation-name: round_animation;
+	animation-duration: 3s;
+}
+
+
+@keyframes round_animation {
+	0% {width: 0px; rotate: 360deg;}
+	50% {width: 20px; rotate: 180deg;}
+	100% {width: 50px; rotate: 0deg;}
+}
+
+
+.grey {
+	background-color: rgb(218, 218, 228);
+	
+}
+
+.second_form {
+	background-color: rgb(255, 255, 255);
+	
+}
+.white {
+}
+
+.wrapper_form {
+	max-width: 300px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.wrapper_form input {
+	width: 100%;
+	padding: 10px;
+	padding-left: 20px;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+
+.wrapper_form select {
+	width: 100%;
+	padding: 10px;
+	padding-left: 20px;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+
+.wrapper_form input:hover {
+	transform: scale(110%);
+}
+
+.wrapper_form button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: rgb(224, 194, 27);
+	font-weight: bold;
+	border: 1px solid;
+	transition: all 0.5s;
+}
+
+.wrapper_form button:hover {
+	transform: skew(-20deg, 0deg);
+}
+
+footer {
+	background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(12, 38, 155) 0%, rgba(0,212,255,1) 57%);
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	text-align: center;
+
+}
+
+footer p {
+	color: white;
+}
+
+
+@media screen and (max-width: 1200px) 
+{
+	.container {
+		width: 960px;
+	}
+}
+@media screen and (max-width: 992px) 
+{
+	.container {
+		width: 720px;
+	}
+	.wrapper-inner {
+		flex-direction: column;
+	}
+	.offer__text {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 768px) 
+{
+	.container {
+		width: 540px;
+	}
+	.btn2 {
+		margin: 0 auto;
+		width: 90%;
+	}
+	.cnt {
+		text-align: center;
+	}
+	.wrapper_form {
+		max-width: 400px;
+	}
+	.offer__text {
+		font-size: 20px;
+	}
+	.block__icon {
+		width: 100px;
+	}
+	@keyframes round_animation {
+		0% {width: 0px; rotate: 360deg;}
+		50% {width: 50px; rotate: 180deg;}
+		100% {width: 100px; rotate: 0deg;}
+	}
+	.small_heads {
+		font-size: 25px;
+	}
+	.block__text {
+		font-size: 20px;
+	}
+	.head_h2 {
+		font-size: 30px;
+	}
+	footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.img {
+		width: 90%;
+	}
+}
+
+input:invalid {
+	box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+	box-shadow: none;
+}
